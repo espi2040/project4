@@ -22,6 +22,7 @@ app.get("/merge",function(req,res){
    res.render("merge.ejs");
 });
 
-app.listen("8080","127.0.0.1",function(){
-    console.log("express server running...");
+//starting server
+app.listen(process.env.PORT, process.env.IP, function(){
+    console.log("Express server is running...");
 });
